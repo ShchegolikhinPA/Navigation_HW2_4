@@ -8,8 +8,8 @@ class ProfileHeaderTableViewCell: UITableViewCell {
             titleContaintLabel.text = contentPosts?.author
             contentImageView.image = UIImage(named: contentPosts?.image ?? "")
                 textContaintLabel.text = contentPosts?.description
-                lickesContaintLabel.text = "Likes \(String(describing: contentPosts?.likes))"
-                viewsContaintLabel.text = "Views \(String(describing: contentPosts?.views))"
+            lickesContaintLabel.text = "Likes: \(String(describing: contentPosts!.likes))"
+            viewsContaintLabel.text = "Views: \(String(describing: contentPosts!.views))"
         }
     }
         

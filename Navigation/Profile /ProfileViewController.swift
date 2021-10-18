@@ -52,7 +52,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sectionTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ProfileHeaderTableViewCell
-        
+    
         sectionTableViewCell.contentPosts = contentPost[indexPath.row]
         return sectionTableViewCell
     }

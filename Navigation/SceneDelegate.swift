@@ -2,7 +2,8 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
+    
     var window: UIWindow?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,8 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let feedVC = FeedViewController()
         feedVC.view.backgroundColor = .green
         feedVC.title = "Feed"
-        feedVC.tabBarItem = UITabBarItem(title: "Feed", image: .checkmark, tag: 1)
         
+        feedVC.tabBarItem = UITabBarItem(title: "Feed", image: .checkmark, tag: 1)
+    
         let profileVC = LogInViewController() //ProfileViewController()
         profileVC.title = "Profile"
         
